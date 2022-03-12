@@ -1,0 +1,103 @@
+/* Button style */
+.btn {
+  font-family: $primary-font;
+  text-transform: capitalize;
+  padding: 0.8rem 28px;
+  padding: 0.8em 1.86em;
+  border-radius: 0;
+  border: 1px solid;
+  position: relative;
+  z-index: 1;
+  transition: 0.2s ease;
+  font-weight: 600;
+  border-radius: 3.35rem;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 115%;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.2);
+    transform: translateY(-45%) skew(25deg) scale(0);
+    left: -5%;
+    transition: 200ms ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover:before {
+    transform: translateY(-45%) skew(25deg) scale(1);
+  }
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none !important;
+    border-color: rgba(0, 0, 0, 0.2) !important;
+  }
+
+  &-xl {
+    padding: 1.066667em 2.133em;
+  }
+  &-lg {
+    padding: 1.066667em 1.86em;
+  }
+  &-md {
+    padding: 0.66em 2.133em;
+  }
+}
+
+// button primary
+.btn-primary {
+  background: $color-primary;
+  color: $white;
+  border-color: $color-primary;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    // border-color: $color-primary !important;
+    background: darken($color-primary, 5%) !important;
+  }
+}
+
+// button primary
+.btn-secondary {
+  background: $color-secondary;
+  color: $white;
+  border-color: $color-secondary;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: darken($color-secondary, 5%) !important;
+    // border-color: $color-secondary !important;
+  }
+}
+
+// button outline primary
+.btn-outline-primary {
+  background: transparent;
+  color: $color-primary;
+  border-color: $color-primary;
+  font-size: 0.93rem;
+
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: $color-primary !important;
+    // border-color: $color-primary !important;
+    color: $white;
+  }
+}

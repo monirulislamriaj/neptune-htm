@@ -1,0 +1,17 @@
+// import bootstrap
+@import 'bootstrap/bootstrap';
+
+// import theme style
+@import 'variables';
+
+@import 'mixins';
+
+@import 'typography';
+
+@import 'buttons';
+
+@import 'common';
+
+@import 'templates/navigation.scss';
+
+@import 'templates/main.scss';

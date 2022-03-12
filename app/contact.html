@@ -1,0 +1,97 @@
+@@include('header.htm')
+<div class="position-relative page-header-shape ">
+  @@include('blocks/head.htm')
+  @@include('blocks/page-header.htm', {"title": "Contact", "page-title position-relative mb-3 ": "Contact"})
+</div>
+
+<!--========================= contact start =========================-->
+<section class="section contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="bg-white shadow-1 p-5">
+          <h2 class="mb-4">Fill The Form To Contact Us</h2>
+          <form action="#">
+            <div class="mb-5">
+              <input type="text" class="form-control" name="name" id="name" placeholder="your first name" required="">
+            </div>
+            <div class="mb-5">
+              <input type="email" class="form-control" name="email" id="email" placeholder="E-Mail Address" required="">
+            </div>
+            <div class="mb-5">
+              <select class="form-select form-control" id="select" aria-label="Floating label select example">
+                <option selected="">What Is This About?</option>
+                <option value="1">Blog Advertisement</option>
+                <option value="2">Blog Advertisement</option>
+                <option value="3">Blog Advertisement</option>
+              </select>
+            </div>
+            <div class="mb-5">
+              <textarea class="form-control" placeholder="Your message" id="textarea" required=""></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-md">Subscribe Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--========================= contact end =========================-->
+
+<!--========================= section start =========================-->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2>Lets Get You Set Up now</h2>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card bg-dark text-white rounded">
+          <img src="images/img-5.png" class="card-img rounded" alt="img">
+          <div class="card-img-overlay px-4  text-center rounded d-flex align-items-center flex-column justify-content-center">
+            <h3 class="text-white card-title">Sydney</h3>
+            <p class="text-white card-text">Lorem ipsum dolor amet, consectetur ading elit. Morbi  egestasWtvira aliquet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white rounded">
+          <img src="images/img-6.png" class="card-img rounded" alt="img">
+          <div class="card-img-overlay px-4  text-center rounded d-flex align-items-center flex-column justify-content-center">
+            <h3 class="text-white card-title">Maleborn</h3>
+            <p class="text-white card-text">Lorem ipsum dolor amet, consectetur ading elit. Morbi  egestasWtvira aliquet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white rounded">
+          <img src="images/img-7.png" class="card-img rounded" alt="img">
+          <div class="card-img-overlay px-4  text-center rounded d-flex align-items-center flex-column justify-content-center">
+            <h3 class="text-white card-title">Somalia</h3>
+            <p class="text-white card-text">Lorem ipsum dolor amet, consectetur ading elit. Morbi  egestasWtvira aliquet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card bg-dark text-white rounded">
+          <img src="images/img-8.png" class="card-img rounded" alt="img">
+          <div class="card-img-overlay px-4  text-center rounded d-flex align-items-center flex-column justify-content-center">
+            <h3 class="text-white card-title">Ukrane</h3>
+            <p class="text-white card-text">Lorem ipsum dolor amet, consectetur ading elit. Morbi  egestasWtvira aliquet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+<!--========================= section end =========================-->
+
+
+@@include('blocks/footer.htm')
+@@include('footer.htm')
